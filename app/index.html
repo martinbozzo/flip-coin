@@ -24,8 +24,43 @@
         your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <div>
+    <div class="flip-container">
         <div class="btn-flip">FLIP A COIN</div>
+
+        <div class="coin">
+            <div class="front">
+                <img src="http://lorempicsum.com/futurama/100/100/1" alt="" />
+            </div>
+            <div class="back">
+                <img src="http://lorempicsum.com/futurama/100/100/2" alt="" />
+            </div>
+        </div>
+
+        <div class="log-container">
+            <div class="tails">
+                <span>Tails</span>
+
+                <label>Total</label>
+                <span class="quantity">0</span>
+
+                <label>Average</label>
+                <span class="average">0</span>
+            </div>
+
+            <div class="heads">
+                <span>Heads</span>
+
+                <label>Total</label>
+                <span class="quantity">0</span>
+
+                <label>Average</label>
+                <span class="average">0</span>
+            </div>
+
+            <div class="flip">
+                <span>You got:</span>
+            </div>
+        </div>
     </div>
 
     <!-- build:js scripts/vendor.js -->

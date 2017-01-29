@@ -16,7 +16,79 @@ html, body {
   padding: 0.2em 0;
 }
 
-.button {
+.flip-container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.flip-container .btn-flip {
     background-color: #BB0000;
     color: #ffffff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    width: 150px;
+    margin: 50px auto;
+}
+
+.flip-container .btn-flip:active {
+    background-color: #d50000;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    width: 150px;
+    margin: 50px auto;
+}
+
+.flip-container .coin {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 100px auto;
+}
+
+.flip-container .coin.flip {
+    transform: rotateY(180deg);
+}
+
+.flip-container .coin .front,
+.flip-container .coin .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.flip-container .coin .front {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+
+.flip-container .coin .back {
+    transform: rotateY(180deg);
+}
+
+.flip-container .log-container {
+
+}
+
+.flip-container .log-container label,
+.flip-container .log-container span {
+    display: inline-block;
+    margin-right: 3%;
+}
+
+.flip-container .log-container .heads {
+
+}
+
+.flip-container .log-container .tails {
+
 }
